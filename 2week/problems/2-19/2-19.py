@@ -1,0 +1,15 @@
+A = int(input())
+B = int(input())
+C = int(input())
+X = int(input())
+Y = int(input())
+Z = int(input())
+
+count1 = (A // X) * (B // Y) * (C // Z)
+count2 = (A // X) * (B // Z) * (C // Y)
+count3 = (A // Y) * (B // Z) * (C // X)
+count4 = (A // Y) * (B // X) * (C // Z)
+count5 = (A // Z) * (B // X) * (C // Y)
+count6 = (A // Z) * (B // Y) * (C // X)
+
+print(max(count1, count2, count3, count4, count5, count6))

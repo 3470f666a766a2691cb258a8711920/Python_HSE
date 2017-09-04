@@ -1,0 +1,5 @@
+A = int(input())
+B = int(input())
+N = int(input())
+S = N * (100 * A + B)
+print(S // 100, S % 100)
